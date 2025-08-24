@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Property Listing Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🏠 Property Finder</h1>
+    <p>Search your dream property – Mini version of 99acres</p>
+  </header>
+
+  <!-- Search Section -->
+  <section class="search-bar">
+    <input type="text" id="search" placeholder="Search by location..." onkeyup="searchProperties()">
+    <select id="typeFilter" onchange="filterProperties()">
+      <option value="all">All Types</option>
+      <option value="apartment">Apartment</option>
+      <option value="villa">Villa</option>
+      <option value="plot">Plot</option>
+    </select>
+  </section>
+
+  <!-- Property Listings -->
+  <section id="property-list" class="property-list"></section>
+
+  <script src="script.js"></script>
+</body>
+</html>
